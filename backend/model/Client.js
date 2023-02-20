@@ -6,9 +6,9 @@ const clientSchema = mongoose.Schema(
     email: String,
     phone: String,
     address: String,
-    userId: [String],
+    userId: String,
   },
   { timestamps: true }
 );
 
-module.exports = mongoose.Model("CLient", clientSchema);
+module.exports = mongoose.model("CLient", clientSchema);

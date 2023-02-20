@@ -14,9 +14,9 @@ const profileSchema = mongoose.Schema(
     paymentDetails: String,
     logo: String,
     website: String,
-    userId: [String],
+    userId: String,
   },
   { timestamps: true }
 );
 
-module.exports = mongoose.Model("Profile", profileSchema);
+module.exports = mongoose.model("Profile", profileSchema);

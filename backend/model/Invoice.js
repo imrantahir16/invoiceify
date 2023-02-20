@@ -20,7 +20,7 @@ const invoiceSchema = mongoose.Schema(
     status: String,
     invoiceNumber: String,
     type: String,
-    creator: [String],
+    creator: String,
     totalAmountReceived: Number,
     client: {
       name: String,
@@ -41,4 +41,4 @@ const invoiceSchema = mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.Model("Invoice", invoiceSchema);
+module.exports = mongoose.model("Invoice", invoiceSchema);

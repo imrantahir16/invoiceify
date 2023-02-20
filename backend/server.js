@@ -10,10 +10,17 @@ require("dotenv").config();
 
 const app = express();
 connectDB();
+
 // middleware
 app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+// routes
+app.use("/api/user", require("./routes/user"));
+app.use("/api/client", require("./routes/client"));
+app.use("/api/profile", require("./routes/profile"));
+app.use("/api/invoice", require("./routes/invoice"));
 
 const PORT = process.env.PORT || 5000;
 
