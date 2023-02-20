@@ -76,7 +76,11 @@ const updateClient = async (req, res) => {
   try {
     if (!mongoose.isValidObjectId(_id))
       return res.status(400).json({ message: "Invalid Client Id" });
-    const updatedClient = await Client.findByIdAndUpdate(_id, { $set: client });
+    const updatedClient = await Client.findByIdAndUpdate(
+      _id,
+      { $set: client },
+      { new: true }
+    );
     if (!updatedClient)
       return res
         .status(404)

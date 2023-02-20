@@ -9,11 +9,11 @@ const {
 
 const router = require("express").Router();
 
-router.get("/:id", getClient);
 router.get("/", getClients);
-router.get("/user/:userId", getClientsByUser);
+router.get("/:id", getClient);
 router.post("/", createClient);
 router.put("/:id", updateClient);
 router.delete("/:id", deleteClient);
+router.get("/user/:userId", getClientsByUser);
 
 module.exports = router;
