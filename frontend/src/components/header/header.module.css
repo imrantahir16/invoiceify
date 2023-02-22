@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.withLogo {
+  justify-content: space-between;
+}
+
+.withoutLogo {
+  justify-content: flex-end;
+}
+
+.logo {
+  height: 5rem;
+  cursor: pointer;
+}
+
+.button {
+  border: 1px solid rgb(75, 145, 241);
+  padding: 12px 30px;
+  border-radius: 50px;
+  background-color: white;
+  color: rgb(75, 145, 241);
+  cursor: pointer;
+  font-size: 15px;
+  outline: transparent;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: rgb(75, 145, 241);
+  color: rgb(255, 255, 255);
+}
