@@ -1,16 +1,12 @@
-import styles from "./header.module.css";
+import Logo from "./Logo";
 
 const Header = () => {
   return (
-    <div className={`${styles.header} ${styles.withLogo}`}>
-      <img
-        className={styles.logo}
-        src={
-          "https://res.cloudinary.com/dcj24nzd9/image/upload/v1677023211/invoiceify/logo-no-background_e2ynme.png"
-        }
-        alt="invoiceify logo"
-      />
-      <a href="/login" className={styles.button}>
+    <div className="flex items-center py-4 px-8 justify-between border-b border-base-300">
+      <a href="/">
+        <Logo />
+      </a>
+      <a href="/login" className="btn btn-primary">
         Get Started
       </a>
     </div>

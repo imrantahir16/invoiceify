@@ -1,21 +1,23 @@
-import styles from "./home.module.css";
 import image from "../../assets/89367.jpg";
 const Home = () => {
   return (
     <div>
-      <section className={styles.hero}>
-        <h1 className={styles.heading}>
-          Easiest <span style={{ color: "rgb(75, 145, 241)" }}>Invoicing</span>{" "}
-          for businesses
+      <section className="w-4/5 md:w-1/2 my-12 mx-auto">
+        <h1 className="font-medium text-8xl text-center py-4 ">
+          Easiest <span className="text-primary">Invoicing</span> for businesses
         </h1>
-        <div className={styles.paragraph}>
+        <div className="py-8 text-2xl text-center">
           <p>
             Free and Open Source Invoicing application made with MongoDB,
             Express, React & Nodejs
           </p>
         </div>
-        <div className={styles.imgContainer}>
-          <img src={image} alt="invoicing app mockup" />
+        <div className="mt-12 flex items-center justify-center ">
+          <img
+            className="w-[40rem] md:w-[1200px] md:mx-28 mx-auto"
+            src={image}
+            alt="invoicing app mockup"
+          />
         </div>
       </section>
     </div>
