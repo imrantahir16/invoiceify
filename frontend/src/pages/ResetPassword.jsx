@@ -1,62 +1,37 @@
 import { useState } from "react";
-import { BsPersonCircle } from "react-icons/bs";
 import { MdVisibility, MdVisibilityOff } from "react-icons/md";
 import useTheme from "../hooks/useTheme";
 
-const SignUp = () => {
+const ResetPassword = () => {
   const { theme } = useTheme();
   const [passwordShow, setPasswordShow] = useState(false);
   const [passwordConfirmShow, setPasswordConfirmShow] = useState(false);
 
-  const signUpHandler = (e) => {
+  const resetHandler = (e) => {
     e.preventDefault();
   };
   return (
-    <div className="min-h-min flex items-center justify-center px-2">
+    <div className="min-h-[calc(100vh-122px)] md:min-h-[calc(100vh-172px)] flex items-center justify-center px-2">
       <div
         className={`card w-96 ${
           theme === "light" ? "bg-base-300" : "bg-neutral"
         } shadow-xl my-8`}
       >
         <div className="card-body">
-          <div className="flex items-center justify-center mb-2 md:mb-4">
-            <BsPersonCircle className="text-3xl md:text-5xl fill-primary" />
-          </div>
           <h2
             className={`text-xl md:text-3xl text-center ${
               theme === "light" ? "text-base-content" : "text-neutral-content"
             }`}
           >
-            Create account!
+            Reset Your Password
           </h2>
-          <form onSubmit={signUpHandler}>
-            <div className="pt-4 md:pt-8 flex flex-col gap-4">
-              <div className="flex gap-2">
-                <input
-                  type="text"
-                  name="firstname"
-                  placeholder="First name"
-                  className="input input-bordered input-primary w-full max-w-xs"
-                />
-                <input
-                  type="text"
-                  name="lastname"
-                  placeholder="Last name"
-                  className="input input-bordered input-primary w-full max-w-xs"
-                />
-              </div>
-
-              <input
-                type="email"
-                name="email"
-                placeholder="Email address"
-                className="input input-bordered input-primary w-full max-w-xs"
-              />
+          <form onSubmit={resetHandler}>
+            <div className="pt-8 flex flex-col gap-4">
               <div className="relative">
                 <input
                   type="password"
                   name="password"
-                  placeholder="Password"
+                  placeholder="Enter password"
                   className="input input-bordered input-primary w-full max-w-xs"
                 />
                 <span
@@ -70,7 +45,7 @@ const SignUp = () => {
                 <input
                   type="password"
                   name="confirmPassword"
-                  placeholder="Confirm password"
+                  placeholder="Re-enter password"
                   className="input input-bordered input-primary w-full max-w-xs"
                 />
                 <span
@@ -84,22 +59,7 @@ const SignUp = () => {
                   )}
                 </span>
               </div>
-
-              <button className="btn btn-primary">Sign Up</button>
-              <div>
-                <p
-                  className={`${
-                    theme === "light"
-                      ? "text-base-content"
-                      : "text-neutral-content"
-                  }`}
-                >
-                  Already have an account?
-                </p>
-                <a href="/login" className="text-primary cursor-pointer">
-                  Login
-                </a>
-              </div>
+              <button className="btn btn-primary">Submit</button>
             </div>
           </form>
         </div>
@@ -107,4 +67,4 @@ const SignUp = () => {
     </div>
   );
 };
-export default SignUp;
+export default ResetPassword;

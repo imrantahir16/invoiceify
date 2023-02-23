@@ -3,10 +3,10 @@ const Home = () => {
   return (
     <div>
       <section className="w-4/5 md:w-1/2 my-12 mx-auto">
-        <h1 className="font-medium text-8xl text-center py-4 ">
+        <h1 className="font-medium text-4xl md:text-8xl text-center py-4 ">
           Easiest <span className="text-primary">Invoicing</span> for businesses
         </h1>
-        <div className="py-8 text-2xl text-center">
+        <div className="py-8 textmd  md:text-2xl text-center">
           <p>
             Free and Open Source Invoicing application made with MongoDB,
             Express, React & Nodejs

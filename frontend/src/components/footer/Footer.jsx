@@ -2,7 +2,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="flex items-center justify-center gap-8 py-8 border-t border-solid border-base-300 ">
+    <div className="flex items-center justify-center gap-8 py-4 md:py-8 border-t border-solid border-neutral-content ">
       <p>Made with ❤ by Imran</p>
       <div className="flex gap-4 ">
         <a

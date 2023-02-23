@@ -5,7 +5,7 @@ const Logo = () => {
       viewBox="0 0 554.9754855507149 143.59600434139122"
       height="102.33801873383287"
       width="395.52"
-      className="fill-primary h-[50px] w-auto"
+      className="fill-primary h-[25px] w-auto md:h-[50px]"
     >
       <g transform="matrix(1,0,0,1,159.4554855507149,19.845757474099656)">
         <svg
