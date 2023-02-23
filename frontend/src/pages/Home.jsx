@@ -1,4 +1,4 @@
-import image from "../../assets/89367.jpg";
+import image from "../assets/89367.jpg";
 const Home = () => {
   return (
     <div>
