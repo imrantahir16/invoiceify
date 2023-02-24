@@ -12,20 +12,20 @@ const Footer = () => {
       </p>
       <div className="flex gap-4 ">
         <a
-          className="cursor-pointer text-primary no-underline text-lg focus:outline-none focus:ring-1 focus:ring-primary focus:ring-offset-2 focus:ring-offset-transparent"
+          className="cursor-pointer text-primary no-underline text-lg focus:outline-none focus:ring-1 focus:ring-primary focus:ring-offset-2 focus:ring-offset-transparent "
           href="https://www.linkedin.com/in/imran-tahir-4a1062132/"
           target={"_blank"}
           rel="noopener noreferrer"
         >
-          <BsLinkedin />
+          <BsLinkedin className="hover:fill-primary-focus" />
         </a>
         <a
-          className="cursor-pointer text-primary no-underline text-lg focus:outline-none focus:ring-1 focus:ring-primary focus:ring-offset-2 focus:ring-offset-transparent"
+          className="cursor-pointer text-primary no-underline text-lg focus:outline-none focus:ring-1 focus:ring-primary focus:ring-offset-2 focus:ring-offset-transparent "
           href="https://github.com/imrantahir16"
           target={"_blank"}
           rel="noopener noreferrer"
         >
-          <BsGithub />
+          <BsGithub className="hover:fill-primary-focus" />
         </a>
       </div>
     </div>

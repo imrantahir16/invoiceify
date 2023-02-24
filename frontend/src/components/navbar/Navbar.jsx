@@ -45,7 +45,7 @@ const Navbar = (props) => {
                   <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                 </svg>
               </button>
-              <ul className="p-2 bg-base-100 shadow-lg border border-base-content">
+              <ul className="z-50 p-2 bg-base-100 shadow-lg border border-base-content">
                 <li>
                   <a href="/new-invoice">Add Invoice</a>
                 </li>
@@ -82,7 +82,7 @@ const Navbar = (props) => {
                 <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
               </svg>
             </button>
-            <ul className="p-2 bg-base-100 shadow-lg border border-base-content">
+            <ul className="z-50 p-2 bg-base-100 shadow-lg border border-base-content">
               <li>
                 <a href="/new-invoice">Add Invoice</a>
               </li>

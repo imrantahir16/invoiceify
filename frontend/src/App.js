@@ -8,6 +8,7 @@ import Forgot from "./pages/Forgot";
 import ResetPassword from "./pages/ResetPassword";
 import PageNotFound from "./pages/PageNotFound";
 import Navbar from "./components/navbar/Navbar";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   const user = true;
@@ -18,6 +19,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/forgot" element={<Forgot />} />
