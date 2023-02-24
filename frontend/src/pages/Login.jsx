@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BiLogInCircle } from "react-icons/bi";
-import { BsGoogle } from "react-icons/bs";
+import { FcGoogle } from "react-icons/fc";
 import { MdVisibility, MdVisibilityOff } from "react-icons/md";
 import useTheme from "../hooks/useTheme";
 const Login = () => {
@@ -83,12 +83,14 @@ const Login = () => {
                   Forgot Password?
                 </a>
               </div>
-              <div className="flex items-center justify-center gap-2">
-                <button className="btn btn-primary w-1/2">Login</button>
-                <button className="btn btn-outline btn-error w-1/2 ">
-                  <BsGoogle className="mr-2" /> Google
-                </button>
-              </div>
+
+              <button className="btn btn-primary">Login</button>
+              <div className="divider">OR</div>
+              <button className="btn btn-outline">
+                <FcGoogle className="mr-2" />
+                Login with Google
+              </button>
+
               <div>
                 <p
                   className={`${
@@ -98,10 +100,13 @@ const Login = () => {
                   }`}
                 >
                   Don't have an account?
+                  <a
+                    href="/signup"
+                    className="ml-2 text-primary cursor-pointer"
+                  >
+                    Sign Up
+                  </a>
                 </p>
-                <a href="/signup" className="text-primary cursor-pointer">
-                  Sign Up
-                </a>
               </div>
             </div>
           </form>

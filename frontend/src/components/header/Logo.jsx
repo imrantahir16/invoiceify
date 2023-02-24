@@ -1,11 +1,13 @@
-const Logo = () => {
+const Logo = ({ navbar }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 554.9754855507149 143.59600434139122"
       height="102.33801873383287"
       width="395.52"
-      className="fill-primary h-[25px] w-auto md:h-[50px]"
+      className={`fill-primary  w-auto ${
+        navbar ? "h-[35px]" : "h-[25px] md:h-[50px]"
+      }`}
     >
       <g transform="matrix(1,0,0,1,159.4554855507149,19.845757474099656)">
         <svg

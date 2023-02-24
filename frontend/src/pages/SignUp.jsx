@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BsPersonCircle } from "react-icons/bs";
+import { FcGoogle } from "react-icons/fc";
 import { MdVisibility, MdVisibilityOff } from "react-icons/md";
 import useTheme from "../hooks/useTheme";
 
@@ -11,6 +12,7 @@ const SignUp = () => {
   const signUpHandler = (e) => {
     e.preventDefault();
   };
+
   return (
     <div className="min-h-min flex items-center justify-center px-2">
       <div
@@ -86,6 +88,12 @@ const SignUp = () => {
               </div>
 
               <button className="btn btn-primary">Sign Up</button>
+              <div className="divider ">OR</div>
+              <button className="btn btn-outline">
+                <FcGoogle className="mr-2" />
+                Continue with Google
+              </button>
+
               <div>
                 <p
                   className={`${
@@ -95,10 +103,10 @@ const SignUp = () => {
                   }`}
                 >
                   Already have an account?
+                  <a href="/login" className="ml-2 text-primary cursor-pointer">
+                    Login
+                  </a>
                 </p>
-                <a href="/login" className="text-primary cursor-pointer">
-                  Login
-                </a>
               </div>
             </div>
           </form>

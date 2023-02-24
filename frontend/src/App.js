@@ -7,10 +7,12 @@ import SignUp from "./pages/SignUp";
 import Forgot from "./pages/Forgot";
 import ResetPassword from "./pages/ResetPassword";
 import PageNotFound from "./pages/PageNotFound";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
+  const user = true;
   return (
-    <div>
+    <>
       <Header />
       <Router>
         <Routes>
@@ -22,9 +24,8 @@ function App() {
           <Route path="/*" element={<PageNotFound />} />
         </Routes>
       </Router>
-
       <Footer />
-    </div>
+    </>
   );
 }
 

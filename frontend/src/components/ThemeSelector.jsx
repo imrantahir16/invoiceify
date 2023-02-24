@@ -43,6 +43,7 @@ const ThemeSelector = () => {
         <div className="grid grid-cols-1 gap-3 p-3">
           {THEMES.map((theme, i) => (
             <div
+              tabIndex={0}
               key={`${theme}-${i}`}
               className="outline-base-content overflow-hidden rounded-lg outline-2 outline-offset-2"
             >

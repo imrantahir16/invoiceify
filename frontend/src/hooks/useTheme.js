@@ -3,12 +3,10 @@ const { useState, useEffect } = require("react");
 export const THEMES = [
   "light",
   "dark",
-  "emerald",
   "synthwave",
   "halloween",
   "forest",
   "luxury",
-  "dracula",
   "lemonade",
   "night",
 ];
