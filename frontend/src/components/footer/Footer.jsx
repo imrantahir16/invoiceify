@@ -1,9 +1,15 @@
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-
+import { FaHeart } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="flex items-center justify-center gap-8 py-4 md:py-8 border-t border-solid border-neutral-content ">
-      <p>Made with ❤ by Imran</p>
+    <div className="flex items-center justify-center gap-8 py-4 md:py-8 border-t border-neutral-content">
+      <p className="flex items-center gap-2">
+        <span>Made with</span>
+        <span className="motion-safe:animate-bounce inline ">
+          <FaHeart className="fill-error" />
+        </span>
+        <span>By Imran</span>
+      </p>
       <div className="flex gap-4 ">
         <a
           className="cursor-pointer text-primary no-underline text-lg focus:outline-none focus:ring-1 focus:ring-primary focus:ring-offset-2 focus:ring-offset-transparent"

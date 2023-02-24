@@ -13,7 +13,8 @@ function App() {
   const user = true;
   return (
     <>
-      <Header />
+      {user && <Navbar />}
+      {!user && <Header />}
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />

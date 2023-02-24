@@ -3,13 +3,16 @@ const Home = () => {
   return (
     <div>
       <section className="w-4/5 md:w-1/2 my-12 mx-auto">
-        <h1 className="font-medium text-4xl md:text-8xl text-center py-4 ">
-          Easiest <span className="text-primary">Invoicing</span> for businesses
+        <h1 className="font-medium text-4xl md:text-7xl text-center py-4 ">
+          Professional <span className="text-primary">Invoicing</span> Made
+          Simple with Invoiceify
         </h1>
-        <div className="py-8 textmd  md:text-2xl text-center">
+        <div className="py-8 textmd  md:text-2xl text-center leading-8">
           <p>
-            Free and Open Source Invoicing application made with MongoDB,
-            Express, React & Nodejs
+            Invoiceify simplifies professional invoicing. Create customized
+            invoices, track payments, and manage your finances effortlessly.
+            Spend less time on invoicing and more time on growing your business
+            with Invoiceify.
           </p>
         </div>
         <div className="mt-12 flex items-center justify-center ">

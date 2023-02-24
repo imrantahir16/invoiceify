@@ -38,7 +38,7 @@ const ThemeSelector = () => {
       </div>
       <div
         tabIndex={0}
-        className="dropdown-content bg-base-200 text-base-content rounded-t-box rounded-b-box top-px max-h-96 h-[70vh] w-52 overflow-y-auto shadow-2xl mt-16"
+        className="dropdown-content bg-base-200 text-base-content rounded-t-box rounded-b-box top-px max-h-96 h-[70vh] w-52 overflow-y-auto shadow-2xl mt-16 border border-base-content"
       >
         <div className="grid grid-cols-1 gap-3 p-3">
           {THEMES.map((theme, i) => (
