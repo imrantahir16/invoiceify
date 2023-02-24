@@ -8,7 +8,7 @@ const TableRow = ({ data }) => {
       </th>
       <td>{data.client}</td>
       <td>
-        <span className="text-success">{data.amount}</span>
+        <span className="text-success font-bold">{data.amount}</span>
       </td>
       <td>{data.paymentDate}</td>
       <td>{data.paymentMethod}</td>

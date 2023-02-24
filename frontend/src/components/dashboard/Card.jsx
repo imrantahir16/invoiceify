@@ -10,15 +10,6 @@ const Card = (props) => {
         <div className="stat-value text-primary">{value}</div>
         {/* <div className="stat-desc">21% more than last month</div> */}
       </div>
-      {/* <div className="card bg-base-100 shadow-xl border border-base-content">
-        <div className="card-body">
-          <div className="flex items-center justify-between">
-            <h2 className="card-title text-primary ">{value}</h2>
-            <span>{icon}</span>
-          </div>
-          <p>{title}</p>
-        </div>
-      </div> */}
     </div>
   );
 };

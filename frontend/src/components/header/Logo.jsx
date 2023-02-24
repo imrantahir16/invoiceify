@@ -5,7 +5,7 @@ const Logo = ({ navbar }) => {
       xmlns="http://www.w3.org/2000/svg"
       id="icon-0"
       viewBox="0 0 910.88 180"
-      className={`${user ? "fill-neutral-content" : "fill-primary"}  w-auto ${
+      className={`${user ? "fill-base-content" : "fill-primary"}  w-auto ${
         navbar ? "h-[25px]" : "h-[20px] md:h-[35px]"
       }`}
     >
