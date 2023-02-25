@@ -2,16 +2,16 @@ import ClientTable from "../components/clients/ClientTable";
 
 const Clients = () => {
   return (
-    <div className="min-h-[calc(100vh-122px)] md:min-h-[calc(100vh-172px)] py-8 px-8 lg:px-12 flex flex-col gap-4">
+    <div className="min-h-[calc(100vh-122px)] md:min-h-[calc(100vh-172px)] px-2 py-8 sm:px-8 lg:px-12 flex flex-col gap-4">
       <div>
         <div className="form-control">
-          <div className="input-group">
+          <div className="input-group input-group-sm sm:input-group-md">
             <input
               type="text"
               placeholder="Search…"
-              className="input input-bordered"
+              className="input input-bordered input-sm sm:input-md"
             />
-            <button className="btn btn-square">
+            <button className="btn btn-square btn-sm sm:btn-md">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -31,7 +31,7 @@ const Clients = () => {
         </div>
       </div>
       <div>
-        <h1 className="text-center p-2 text-2xl">CLients</h1>
+        <h1 className="text-center p-2 text-xl sm:text-2xl">CLients</h1>
         <ClientTable />
       </div>
     </div>

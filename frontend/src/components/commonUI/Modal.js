@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import ReactDOM from "react-dom";
 import { useOnClickOutside } from "usehooks-ts";
-const Modal = ({ children, open, disableClickOutside, onClose }) => {
+const Modal = ({ children, open, disableClickOutside, onClose, id }) => {
   const ref = useRef(null);
   useOnClickOutside(ref, () => {
     if (!disableClickOutside && open) {
@@ -10,6 +10,7 @@ const Modal = ({ children, open, disableClickOutside, onClose }) => {
   });
   return (
     <div
+      id={id}
       className={`modal modal-bottom sm:modal-middle ${
         open ? "modal-open" : ""
       }`}

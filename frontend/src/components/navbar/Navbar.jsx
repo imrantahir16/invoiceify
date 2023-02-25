@@ -5,11 +5,11 @@ import { BiLogOutCircle } from "react-icons/bi";
 
 const Navbar = (props) => {
   return (
-    <div className="navbar bg-base-100 py-2 px-4 md:py-3 md:px-6  shadow-xl">
+    <div className="navbar bg-base-100 py-2 px-2 sm:px-4 md:py-3 md:px-6  shadow-xl">
       <div className="navbar-start z-10">
         {/* Mobile menu */}
         <div className="dropdown dropdown-bottom">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label tabIndex={0} className="btn btn-ghost md:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-8 w-8"
@@ -63,7 +63,7 @@ const Navbar = (props) => {
           <Logo />
         </a>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden md:flex">
         {/* desktop menu */}
         <ul className="menu menu-horizontal px-1 flex gap-2">
           <li>
