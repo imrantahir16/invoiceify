@@ -2,7 +2,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { FaHeart } from "react-icons/fa";
 const Footer = () => {
   return (
-    <div className="flex items-center justify-center gap-8 py-4 md:py-8 border-t border-neutral-content">
+    <div className="flex items-center justify-center gap-8 py-3 md:py-6 border-t border-neutral-content">
       <p className="flex items-center gap-2">
         <span>Made with</span>
         <span className="motion-safe:animate-bounce inline ">

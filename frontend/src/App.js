@@ -9,26 +9,31 @@ import ResetPassword from "./pages/ResetPassword";
 import PageNotFound from "./pages/PageNotFound";
 import Navbar from "./components/navbar/Navbar";
 import Dashboard from "./pages/Dashboard";
+import Clients from "./pages/Clients";
 
 function App() {
   const user = true;
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       {user && <Navbar />}
       {!user && <Header />}
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/forgot" element={<Forgot />} />
-          <Route path="/reset" element={<ResetPassword />} />
-          <Route path="/*" element={<PageNotFound />} />
-        </Routes>
-      </Router>
+      <div className="flex-1">
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} />
+            {/* todo: private routes */}
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="clients" element={<Clients />} />
+            <Route path="/forgot" element={<Forgot />} />
+            <Route path="/reset" element={<ResetPassword />} />
+            <Route path="/*" element={<PageNotFound />} />
+          </Routes>
+        </Router>
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
