@@ -1,4 +1,4 @@
-import { BsPerson, BsThreeDotsVertical } from "react-icons/bs";
+// import { BsPerson, BsThreeDotsVertical } from "react-icons/bs";
 import ClientRow from "./ClientRow";
 const tableData = [
   {

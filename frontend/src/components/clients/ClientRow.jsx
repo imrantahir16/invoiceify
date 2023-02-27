@@ -12,7 +12,7 @@ const ClientRow = ({ data }) => {
   const handleToggle = () => setIsEditModalOpen((prev) => !prev);
   const deleteToggleHandler = () => setIsDeleteModalOpen((prev) => !prev);
   return (
-    <tr key={data.id} className="text-[0.7rem] xs:text-xs">
+    <tr key={data.id} className="text-[0.7rem] xs:text-xs sm:text-sm">
       <td className="hidden sm:block">
         <h3 className="">{data.id}</h3>
       </td>
