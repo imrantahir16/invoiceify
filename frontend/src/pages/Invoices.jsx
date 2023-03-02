@@ -1,6 +1,6 @@
-import ClientTable from "../components/clients/ClientTable";
+import InvoiceTable from "../components/invoices/InvoiceTable";
 
-const Clients = () => {
+const Invoices = () => {
   return (
     <div className="min-h-[calc(100vh-122px)] md:min-h-[calc(100vh-172px)] px-2 py-8 sm:px-8 lg:px-12 flex flex-col gap-4">
       <div>
@@ -31,10 +31,10 @@ const Clients = () => {
         </div>
       </div>
       <div>
-        <h1 className="text-center p-2 text-xl sm:text-2xl">CLients</h1>
-        <ClientTable />
+        <h1 className="text-center p-2 text-xl sm:text-2xl">Invoices</h1>
+        <InvoiceTable />
       </div>
     </div>
   );
 };
-export default Clients;
+export default Invoices;

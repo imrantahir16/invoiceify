@@ -51,7 +51,7 @@ const data = [
 ];
 const Dashboard = () => {
   return (
-    <div className="min-h-[calc(100vh-122px)] md:min-h-[calc(100vh-172px)] py-8 px-8 lg:px-12 flex flex-col gap-4">
+    <div className="min-h-[calc(100vh-122px)] md:min-h-[calc(100vh-172px)] px-2 py-8 sm:px-8 lg:px-12 flex flex-col gap-4">
       <section className="mx-auto w-full grid gap-4 lg:gap-x-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
         {data.map((card, index) => (
           <Card key={index} card={card} />

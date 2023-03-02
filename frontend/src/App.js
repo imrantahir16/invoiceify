@@ -10,6 +10,8 @@ import PageNotFound from "./pages/PageNotFound";
 import Navbar from "./components/navbar/Navbar";
 import Dashboard from "./pages/Dashboard";
 import Clients from "./pages/Clients";
+import Invoices from "./pages/Invoices";
+import InvcoiceDetails from "./components/invoices/InvcoiceDetails";
 
 function App() {
   const user = true;
@@ -26,6 +28,8 @@ function App() {
             {/* todo: private routes */}
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="clients" element={<Clients />} />
+            <Route path="invoices" element={<Invoices />} />
+            <Route path="edit/invoice/:id" element={<InvcoiceDetails />} />
             <Route path="/forgot" element={<Forgot />} />
             <Route path="/reset" element={<ResetPassword />} />
             <Route path="/*" element={<PageNotFound />} />

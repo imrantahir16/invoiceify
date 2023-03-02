@@ -28,7 +28,7 @@ const tableData = [
 ];
 const ClientTable = () => {
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-rounded-lg scrollbar-thumb-base-content">
       <table className="table w-full ">
         {/* head */}
         <thead>
@@ -37,7 +37,7 @@ const ClientTable = () => {
             <th className="text-[0.65rem] sm:text-xs">Name</th>
             <th className="hidden sm:block">Email</th>
             <th className="text-[0.65rem] sm:text-xs">Phone</th>
-            <th className="text-[0.65rem] sm:text-xs">Actions</th>
+            <th className="text-[0.65rem] sm:text-xs text-center">Actions</th>
           </tr>
         </thead>
         <tbody>

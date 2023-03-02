@@ -28,19 +28,17 @@ const tableData = [
 ];
 const Table = () => {
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-rounded-lg scrollbar-thumb-base-content ">
       <table className="table w-full">
         {/* head */}
         <thead>
           <tr>
-            <th>
-              <BsPerson className="text-base" />
-            </th>
-            <th>Paid By</th>
-            <th>Amount Paid</th>
-            <th>Payment Date</th>
-            <th>Payment Method</th>
-            <th>Note</th>
+            <th className="text-[0.65rem] sm:text-xs">Name</th>
+            {/* <th>Paid By</th> */}
+            <th className="text-[0.65rem] sm:text-xs">Amount</th>
+            <th className="text-[0.65rem] sm:text-xs">Payment Date</th>
+            <th className="text-[0.65rem] sm:text-xs">Payment Method</th>
+            <th className="hidden sm:block">Note</th>
           </tr>
         </thead>
         <tbody>

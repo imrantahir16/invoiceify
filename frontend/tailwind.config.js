@@ -9,7 +9,10 @@ module.exports = {
       ...defaultTheme.screens,
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require("daisyui"),
+    require("tailwind-scrollbar")({ nocompatible: true }),
+  ],
   daisyui: {
     styled: true,
     // themes: true,
@@ -23,12 +26,16 @@ module.exports = {
       {
         light: {
           ...require("daisyui/src/colors/themes")["[data-theme=light]"],
-          primary: "blue",
-          "primary-focus": "mediumblue",
+          primary: "#1f85ff",
+          "primary-focus": "#196acc",
         },
       },
       {
-        dark: { ...require("daisyui/src/colors/themes")["[data-theme=dark]"] },
+        dark: {
+          ...require("daisyui/src/colors/themes")["[data-theme=dark]"],
+          primary: "#945fee",
+          "primary-focus": "#661ae6",
+        },
       },
       {
         synthwave: {
