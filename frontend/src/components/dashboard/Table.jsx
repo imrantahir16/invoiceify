@@ -33,12 +33,12 @@ const Table = () => {
         {/* head */}
         <thead>
           <tr>
-            <th className="text-[0.65rem] sm:text-xs">Name</th>
+            <th className="">Name</th>
             {/* <th>Paid By</th> */}
-            <th className="text-[0.65rem] sm:text-xs">Amount</th>
-            <th className="text-[0.65rem] sm:text-xs">Payment Date</th>
-            <th className="text-[0.65rem] sm:text-xs">Payment Method</th>
-            <th className="hidden sm:block">Note</th>
+            <th className="">Amount</th>
+            <th className="">Payment Date</th>
+            <th className="">Payment Method</th>
+            <th className="">Note</th>
           </tr>
         </thead>
         <tbody>

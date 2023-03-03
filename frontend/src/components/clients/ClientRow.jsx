@@ -12,12 +12,12 @@ const ClientRow = ({ data }) => {
   const handleToggle = () => setIsEditModalOpen((prev) => !prev);
   const deleteToggleHandler = () => setIsDeleteModalOpen((prev) => !prev);
   return (
-    <tr key={data.id} className="text-[0.7rem] xs:text-xs sm:text-sm">
-      <td className="hidden sm:block">
+    <tr key={data.id} className="">
+      <td className="">
         <h3 className="">{data.id}</h3>
       </td>
-      <td className="p-2 sm:p-4">{data.name}</td>
-      <td className="hidden sm:block">
+      <td className="">{data.name}</td>
+      <td className="">
         <div className="min-w-max inline-flex items-center justify-start gap-2">
           <FiMail />
           <a className="hover:text-primary" href={`mailto:${data.email}`}>
@@ -25,7 +25,7 @@ const ClientRow = ({ data }) => {
           </a>
         </div>
       </td>
-      <td className="p-2 sm:p-4">
+      <td className="">
         <div className="min-w-max inline-flex items-center justify-start gap-2">
           <AiOutlinePhone />
           <a className="hover:text-primary" href={`tel:${data.phone}`}>
@@ -33,7 +33,7 @@ const ClientRow = ({ data }) => {
           </a>
         </div>
       </td>
-      <td className="p-2 sm:p-4">
+      <td className="">
         <div className="flex items-center justify-evenly">
           <label htmlFor={`edit-${data.id}`} onClick={handleToggle}>
             <BiEditAlt className="cursor-pointer hover:fill-info h-4 w-4 sm:h-6 sm:w-6" />

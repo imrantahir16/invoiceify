@@ -8,14 +8,19 @@ const InvoiceRow = ({ data }) => {
   const deleteToggleHandler = () => setIsDeleteModalOpen((prev) => !prev);
 
   return (
-    <tr key={data.id} className="text-[0.7rem] xs:text-xs sm:text-sm">
-      <td className="hidden sm:block">
+    <tr key={data.id} className="">
+      <td className="">
         <h3 className="">{data.id}</h3>
       </td>
-      <td className="p-2 sm:p-4">{data.client}</td>
-      <td className="hidden sm:block sm:p-4">{data.amount}</td>
-      <td className="p-2 sm:p-4">{data.dueDate}</td>
-      <td className="p-2 sm:p-4 flex items-center justify-center">
+      <td className="">{data.client}</td>
+      <td className="">
+        <p>
+          <span>$ </span>
+          {data.amount}
+        </p>
+      </td>
+      <td className="">{data.dueDate}</td>
+      <td className="flex items-center justify-center">
         <div
           className={`${
             data.status === "done"
@@ -30,7 +35,7 @@ const InvoiceRow = ({ data }) => {
           {data.status}
         </div>
       </td>
-      <td className="p-2 sm:p-4">
+      <td className="">
         <div className="flex items-center justify-evenly">
           <label htmlFor={`edit-${data.id}`}>
             <a href={`edit/invoice/${data.id}`}>

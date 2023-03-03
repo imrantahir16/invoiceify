@@ -1,3 +1,4 @@
+import InvoiceMobileRow from "./InvoiceMobileRow";
 import InvoiceRow from "./InvoiceRow";
 
 const invoiceData = [
@@ -25,34 +26,41 @@ const invoiceData = [
   {
     id: "4",
     client: "Zahid",
-    amount: 3000,
+    amount: 30000,
     dueDate: "2 Days ago",
     status: "unpaid",
   },
 ];
 const InvoiceTable = () => {
   return (
-    <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-rounded-lg scrollbar-thumb-base-content">
-      <table className="table w-full ">
-        {/* head */}
-        <thead>
-          <tr>
-            <th className="hidden sm:block">#No.</th>
-            <th className="text-[0.65rem] sm:text-xs">Client</th>
-            <th className="hidden sm:block">Amount</th>
-            <th className="text-[0.65rem] sm:text-xs">Due Date</th>
-            <th className="text-[0.65rem] sm:text-xs text-center">Status</th>
-            <th className="text-[0.65rem] sm:text-xs text-center">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {/* row 1 */}
-          {invoiceData.map((row, index) => {
-            return <InvoiceRow key={row.id} data={row} />;
-          })}
-        </tbody>
-      </table>
-    </div>
+    <>
+      <div className="hidden md:block overflow-x-auto scrollbar-thin scrollbar-thumb-rounded-lg scrollbar-thumb-base-content">
+        <table className="table w-full ">
+          {/* head */}
+          <thead>
+            <tr>
+              <th className="">#No.</th>
+              <th className="">Client</th>
+              <th className="">Amount</th>
+              <th className="">Due Date</th>
+              <th className="text-center">Status</th>
+              <th className="text-center">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* row 1 */}
+            {invoiceData.map((row, index) => {
+              return <InvoiceRow key={row.id} data={row} />;
+            })}
+          </tbody>
+        </table>
+      </div>
+      <div className="grid md:hidden gap-4 ">
+        {invoiceData.map((invoice) => {
+          return <InvoiceMobileRow key={invoice.id} invoice={invoice} />;
+        })}
+      </div>
+    </>
   );
 };
 export default InvoiceTable;

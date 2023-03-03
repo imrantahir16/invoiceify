@@ -5,7 +5,7 @@ const tableData = [
     id: "1",
     name: "Hakim",
     email: "fazal@test.com",
-    phone: "+923330022331",
+    phone: "+923126104979",
   },
   {
     id: "2",
@@ -33,11 +33,11 @@ const ClientTable = () => {
         {/* head */}
         <thead>
           <tr>
-            <th className="hidden sm:block">ID</th>
-            <th className="text-[0.65rem] sm:text-xs">Name</th>
-            <th className="hidden sm:block">Email</th>
-            <th className="text-[0.65rem] sm:text-xs">Phone</th>
-            <th className="text-[0.65rem] sm:text-xs text-center">Actions</th>
+            <th className="">ID</th>
+            <th className="">Name</th>
+            <th className="">Email</th>
+            <th className="">Phone</th>
+            <th className="">Actions</th>
           </tr>
         </thead>
         <tbody>
