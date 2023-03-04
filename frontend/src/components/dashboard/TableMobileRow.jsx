@@ -1,11 +1,7 @@
 import { useState } from "react";
-import { AiOutlinePhone } from "react-icons/ai";
-import { BiEditAlt } from "react-icons/bi";
-import { BsTrash } from "react-icons/bs";
 import { MdOutlineVisibility } from "react-icons/md";
-import Modal from "../commonUI/Modal";
 
-const TableMobileRow = ({ client }) => {
+const TableMobileRow = ({ data }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openHandler = () => {
@@ -36,29 +32,27 @@ const TableMobileRow = ({ client }) => {
         }`}
       >
         <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-          <h2 className="font-semibold text-primary-content">
-            {client.profile}
-          </h2>
+          <h2 className="font-semibold text-primary-content">{data.profile}</h2>
         </div>
-        <p>{client.client}</p>
+        <p>{data.client}</p>
       </div>
       <div className="flex-1">
         <div
           className={`flex flex-col ${isOpen ? "items-start" : "items-center"}`}
         >
-          <span className="text-success font-semibold">{client.amount}</span>
-          <span className="text-xs">{client.paymentDate}</span>
+          <span className="text-success font-semibold">{data.amount}</span>
+          <span className="text-xs">{data.paymentDate}</span>
         </div>
       </div>
       {isOpen && (
         <div>
-          <span>{client.paymentMethod}</span>
+          <span>{data.paymentMethod}</span>
         </div>
       )}
       {isOpen && (
         <div className="flex flex-col space-y-1">
           <h3>Note:</h3>
-          <span>{client.note}</span>
+          <span>{data.note}</span>
         </div>
       )}
       {!isOpen && (

@@ -51,7 +51,7 @@ const ClientTable = () => {
         </table>
       </div>
       <div className="grid md:hidden gap-4">
-        {tableData.map((client, index) => {
+        {tableData.map((client) => {
           return <ClientMobileRow key={client.id} client={client} />;
         })}
       </div>

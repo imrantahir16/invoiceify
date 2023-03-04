@@ -49,7 +49,7 @@ const InvoiceTable = () => {
           </thead>
           <tbody>
             {/* row 1 */}
-            {invoiceData.map((row, index) => {
+            {invoiceData.map((row) => {
               return <InvoiceRow key={row.id} data={row} />;
             })}
           </tbody>

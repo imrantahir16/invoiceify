@@ -2,6 +2,7 @@ import TableMobileRow from "./TableMobileRow";
 import TableRow from "./TableRow";
 const tableData = [
   {
+    id: 1,
     profile: "H",
     client: "Hakim",
     amount: 900,
@@ -10,6 +11,7 @@ const tableData = [
     note: "This payment was for website development Sit laborum amet do ad fugiat velit ex quis ex Lorem et aliqua in occaecat. ",
   },
   {
+    id: 2,
     profile: "A",
     client: "Afaq",
     amount: 500,
@@ -18,6 +20,7 @@ const tableData = [
     note: "",
   },
   {
+    id: 3,
     profile: "J",
     client: "Jerry",
     amount: 800,
@@ -51,8 +54,8 @@ const Table = () => {
         </table>
       </div>
       <div className="grid md:hidden gap-4">
-        {tableData.map((client, index) => {
-          return <TableMobileRow key={client.id} client={client} />;
+        {tableData.map((record) => {
+          return <TableMobileRow key={record.id} data={record} />;
         })}
       </div>
     </>
