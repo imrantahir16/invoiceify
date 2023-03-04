@@ -11,7 +11,10 @@ const Invoices = () => {
               placeholder="Search…"
               className="input input-bordered input-sm sm:input-md"
             />
-            <button className="btn bg-base-200 hover:bg-base-300 border-base-200 hover:border-0 btn-square btn-sm sm:btn-md">
+            <button
+              aria-label="search button"
+              className="btn bg-base-200 hover:bg-base-300 border-base-200 hover:border-0 btn-square btn-sm sm:btn-md"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"

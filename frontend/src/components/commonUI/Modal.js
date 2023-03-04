@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import ReactDOM from "react-dom";
 import { useOnClickOutside } from "usehooks-ts";
 const Modal = ({ children, open, disableClickOutside, onClose, id }) => {
   const ref = useRef(null);

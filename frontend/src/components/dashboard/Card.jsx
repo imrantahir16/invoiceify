@@ -6,7 +6,7 @@ const Card = (props) => {
         <div className="stat-figure text-primary">
           <span>{icon}</span>
         </div>
-        <div className="stat-title">{title}</div>
+        <div className="stat-title text-base-content">{title}</div>
         <div className="stat-value text-primary">{value}</div>
         {/* <div className="stat-desc">21% more than last month</div> */}
       </div>

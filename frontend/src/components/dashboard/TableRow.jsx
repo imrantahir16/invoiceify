@@ -4,7 +4,9 @@ const TableRow = ({ data }) => {
       <td>
         <div className="flex space-x-2">
           <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-            <h3 className="text-primary-content">{data.profile}</h3>
+            <h2 className="font-semibold text-primary-content">
+              {data.profile}
+            </h2>
           </div>
           <span>{data.client}</span>
         </div>

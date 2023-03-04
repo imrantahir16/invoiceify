@@ -27,6 +27,7 @@ module.exports = {
         light: {
           ...require("daisyui/src/colors/themes")["[data-theme=light]"],
           primary: "#1f85ff",
+          success: "#207f5c",
           "primary-focus": "#196acc",
         },
       },
@@ -60,7 +61,7 @@ module.exports = {
       {
         lemonade: {
           ...require("daisyui/src/colors/themes")["[data-theme=lemonade]"],
-          success: "#519903",
+          success: "#4d8303",
         },
       },
       {

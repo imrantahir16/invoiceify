@@ -1,4 +1,3 @@
-import { BsPerson } from "react-icons/bs";
 import TableRow from "./TableRow";
 const tableData = [
   {
