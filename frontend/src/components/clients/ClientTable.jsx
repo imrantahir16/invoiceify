@@ -1,4 +1,5 @@
 // import { BsPerson, BsThreeDotsVertical } from "react-icons/bs";
+import ClientMobileRow from "./ClientMobileRow";
 import ClientRow from "./ClientRow";
 const tableData = [
   {
@@ -28,26 +29,33 @@ const tableData = [
 ];
 const ClientTable = () => {
   return (
-    <div className="overflow-x-auto scrollbar-thin scrollbar-thumb-rounded-lg scrollbar-thumb-base-content">
-      <table className="table w-full ">
-        {/* head */}
-        <thead>
-          <tr>
-            <th className="">ID</th>
-            <th className="">Name</th>
-            <th className="">Email</th>
-            <th className="">Phone</th>
-            <th className="">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {/* row 1 */}
-          {tableData.map((row, index) => {
-            return <ClientRow key={row.id} data={row} />;
-          })}
-        </tbody>
-      </table>
-    </div>
+    <>
+      <div className="hidden md:block overflow-x-auto scrollbar-thin scrollbar-thumb-rounded-lg scrollbar-thumb-base-content">
+        <table className="table w-full ">
+          {/* head */}
+          <thead>
+            <tr>
+              <th className="">ID</th>
+              <th className="">Name</th>
+              <th className="">Email</th>
+              <th className="">Phone</th>
+              <th className="">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {/* row 1 */}
+            {tableData.map((client, index) => {
+              return <ClientRow key={client.id} client={client} />;
+            })}
+          </tbody>
+        </table>
+      </div>
+      <div className="grid md:hidden gap-4">
+        {tableData.map((client, index) => {
+          return <ClientMobileRow key={client.id} client={client} />;
+        })}
+      </div>
+    </>
   );
 };
 export default ClientTable;

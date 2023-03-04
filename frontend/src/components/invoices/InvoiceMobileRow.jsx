@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BiEditAlt } from "react-icons/bi";
 import { BsCircleHalf, BsTrash } from "react-icons/bs";
 import { IoMdClose, IoMdDoneAll } from "react-icons/io";
-import { MdOutlineVisibility, MdVisibility } from "react-icons/md";
+import { MdOutlineVisibility } from "react-icons/md";
 import Modal from "../commonUI/Modal";
 
 const InvoiceMobileRow = ({ invoice }) => {

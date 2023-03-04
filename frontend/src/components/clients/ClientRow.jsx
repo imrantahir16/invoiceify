@@ -6,40 +6,40 @@ import Modal from "../commonUI/Modal";
 import { useState } from "react";
 import ClientForm from "./ClientForm";
 
-const ClientRow = ({ data }) => {
+const ClientRow = ({ client }) => {
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
   const handleToggle = () => setIsEditModalOpen((prev) => !prev);
   const deleteToggleHandler = () => setIsDeleteModalOpen((prev) => !prev);
   return (
-    <tr key={data.id} className="">
+    <tr key={client.id} className="">
       <td className="">
-        <h3 className="">{data.id}</h3>
+        <h3 className="">{client.id}</h3>
       </td>
-      <td className="">{data.name}</td>
+      <td className="">{client.name}</td>
       <td className="">
         <div className="min-w-max inline-flex items-center justify-start gap-2">
           <FiMail />
-          <a className="hover:text-primary" href={`mailto:${data.email}`}>
-            {data.email}
+          <a className="hover:text-primary" href={`mailto:${client.email}`}>
+            {client.email}
           </a>
         </div>
       </td>
       <td className="">
         <div className="min-w-max inline-flex items-center justify-start gap-2">
           <AiOutlinePhone />
-          <a className="hover:text-primary" href={`tel:${data.phone}`}>
-            {data.phone}
+          <a className="hover:text-primary" href={`tel:${client.phone}`}>
+            {client.phone}
           </a>
         </div>
       </td>
       <td className="">
         <div className="flex items-center justify-evenly">
-          <label htmlFor={`edit-${data.id}`} onClick={handleToggle}>
+          <label htmlFor={`edit-${client.id}`} onClick={handleToggle}>
             <BiEditAlt className="cursor-pointer hover:fill-info h-4 w-4 sm:h-6 sm:w-6" />
           </label>
           <Modal
-            id={`edit-${data.id}`}
+            id={`edit-${client.id}`}
             open={isEditModalOpen}
             onClose={handleToggle}
             disableClickOutside={false}
@@ -53,11 +53,11 @@ const ClientRow = ({ data }) => {
             <h3 className="font-bold text-lg text-primary">Edit Client!</h3>
             <ClientForm />
           </Modal>
-          <label htmlFor={`delete-${data.id}`} onClick={deleteToggleHandler}>
+          <label htmlFor={`delete-${client.id}`} onClick={deleteToggleHandler}>
             <BsTrash className="cursor-pointer hover:fill-error h-4 w-4 sm:h-6 sm:w-6" />
           </label>
           <Modal
-            id={`delete-${data.id}`}
+            id={`delete-${client.id}`}
             open={isDeleteModalOpen}
             onClose={deleteToggleHandler}
             disableClickOutside={false}

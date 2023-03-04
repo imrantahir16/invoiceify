@@ -31,7 +31,7 @@ const Clients = () => {
         </div>
       </div>
       <div>
-        <h1 className="text-center p-2 text-xl sm:text-2xl">CLients</h1>
+        <h1 className="text-center p-2 text-xl sm:text-2xl">Clients</h1>
         <ClientTable />
       </div>
     </div>
