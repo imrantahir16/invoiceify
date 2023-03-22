@@ -16,7 +16,7 @@ const TableRow = ({ data }) => {
       </td>
       <td>{data.paymentDate}</td>
       <td>{data.paymentMethod}</td>
-      <td className="">{data?.note ? data.note : " "}</td>
+      <td className="whitespace-normal">{data?.note ? data.note : " "}</td>
     </tr>
   );
 };

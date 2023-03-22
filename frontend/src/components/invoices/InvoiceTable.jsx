@@ -36,7 +36,6 @@ const InvoiceTable = () => {
     <>
       <div className="hidden md:block overflow-x-auto scrollbar-thin scrollbar-thumb-rounded-lg scrollbar-thumb-base-content">
         <table className="table w-full ">
-          {/* head */}
           <thead>
             <tr>
               <th className="">#No.</th>
@@ -48,7 +47,6 @@ const InvoiceTable = () => {
             </tr>
           </thead>
           <tbody>
-            {/* row 1 */}
             {invoiceData.map((row) => {
               return <InvoiceRow key={row.id} data={row} />;
             })}

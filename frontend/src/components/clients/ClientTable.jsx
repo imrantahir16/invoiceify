@@ -32,7 +32,6 @@ const ClientTable = () => {
     <>
       <div className="hidden md:block overflow-x-auto scrollbar-thin scrollbar-thumb-rounded-lg scrollbar-thumb-base-content">
         <table className="table w-full ">
-          {/* head */}
           <thead>
             <tr>
               <th className="">ID</th>
@@ -43,7 +42,6 @@ const ClientTable = () => {
             </tr>
           </thead>
           <tbody>
-            {/* row 1 */}
             {tableData.map((client, index) => {
               return <ClientRow key={client.id} client={client} />;
             })}

@@ -16,7 +16,7 @@ import InvcoiceDetails from "./components/invoices/InvcoiceDetails";
 function App() {
   const user = true;
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col selection:bg-primary selection:text-primary-content">
       {user && <Navbar />}
       {!user && <Header />}
       <div className="flex-1">

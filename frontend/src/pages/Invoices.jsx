@@ -13,7 +13,7 @@ const Invoices = () => {
             />
             <button
               aria-label="search button"
-              className="btn bg-base-200 hover:bg-base-300 border-base-200 hover:border-0 btn-square btn-sm sm:btn-md"
+              className="btn bg-base-300 hover:bg-base-200 border-base-300 hover:border-0 btn-square btn-sm sm:btn-md"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

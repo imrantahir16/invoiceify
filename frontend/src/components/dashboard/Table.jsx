@@ -38,7 +38,6 @@ const Table = () => {
           <thead>
             <tr>
               <th className="">Name</th>
-              {/* <th>Paid By</th> */}
               <th className="">Amount</th>
               <th className="">Payment Date</th>
               <th className="">Payment Method</th>
@@ -46,7 +45,6 @@ const Table = () => {
             </tr>
           </thead>
           <tbody>
-            {/* row 1 */}
             {tableData.map((row, index) => {
               return <TableRow key={index} data={row} />;
             })}
