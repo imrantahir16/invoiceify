@@ -2,6 +2,7 @@ import Logo from "../header/Logo";
 import ThemeSelector from "../ThemeSelector";
 import { BsFillPersonFill } from "react-icons/bs";
 import { BiLogOutCircle } from "react-icons/bi";
+import Link from "next/link";
 
 const Navbar = (props) => {
   return (
@@ -30,7 +31,7 @@ const Navbar = (props) => {
             className="menu menu-compact dropdown-content mt-3 p-2 bg-base-100 rounded-box w-36 xs:w-52 shadow-2xl border border-base-content"
           >
             <li>
-              <a href="/dashboard">Dashboard</a>
+              <Link href="/dashboard">Dashboard</Link>
             </li>
             <li>
               <button className="justify-between">
@@ -47,15 +48,15 @@ const Navbar = (props) => {
               </button>
               <ul className="z-50 p-2 bg-base-100 shadow-lg border border-base-content">
                 <li>
-                  <a href="/new-invoice">Add Invoice</a>
+                  <Link href="/new-invoice">Add Invoice</Link>
                 </li>
                 <li>
-                  <a href="/invoices">View Invoice</a>
+                  <Link href="/invoices">View Invoice</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="/clients">Clients</a>
+              <Link href="/clients">Clients</Link>
             </li>
           </ul>
         </div>
@@ -67,7 +68,7 @@ const Navbar = (props) => {
         {/* desktop menu */}
         <ul className="menu menu-horizontal px-1 flex gap-2">
           <li>
-            <a href="/dashboard">Dashboard</a>
+            <Link href="/dashboard">Dashboard</Link>
           </li>
           <li tabIndex={0}>
             <button>
@@ -84,15 +85,15 @@ const Navbar = (props) => {
             </button>
             <ul className="z-50 p-2 bg-base-100 shadow-lg border border-base-content">
               <li>
-                <a href="/new-invoice">Add Invoice</a>
+                <Link href="/new-invoice">Add Invoice</Link>
               </li>
               <li>
-                <a href="/invoices">View Invoices</a>
+                <Link href="/invoices">View Invoices</Link>
               </li>
             </ul>
           </li>
           <li>
-            <a href="/clients">Clients</a>
+            <Link href="/clients">Clients</Link>
           </li>
         </ul>
       </div>
@@ -107,16 +108,16 @@ const Navbar = (props) => {
             className="dropdown-content menu p-2 shadow-xl border border-base-content bg-base-100 rounded-box w-52 "
           >
             <li tabIndex={0}>
-              <a href="/profile">
+              <Link href="/profile">
                 <BsFillPersonFill />
                 Username
-              </a>
+              </Link>
             </li>
             <li tabIndex={0}>
-              <a href="/logout">
+              <Link href="/logout">
                 <BiLogOutCircle />
                 Log out
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -1,6 +1,6 @@
-import InvoiceTable from "../components/invoices/InvoiceTable";
+import ClientTable from "../../components/clients/ClientTable";
 
-const Invoices = () => {
+const Clients = () => {
   return (
     <div className="min-h-[calc(100vh-122px)] md:min-h-[calc(100vh-172px)] px-2 py-8 sm:px-8 lg:px-12 flex flex-col gap-4">
       <div>
@@ -13,7 +13,7 @@ const Invoices = () => {
             />
             <button
               aria-label="search button"
-              className="btn bg-base-300 hover:bg-base-200 border-base-300 hover:border-0 btn-square btn-sm sm:btn-md"
+              className="btn bg-base-200 hover:bg-base-300 border-base-200 hover:border-0 btn-square btn-sm sm:btn-md"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -34,10 +34,10 @@ const Invoices = () => {
         </div>
       </div>
       <div>
-        <h1 className="text-center p-2 text-xl sm:text-2xl">Invoices</h1>
-        <InvoiceTable />
+        <h1 className="text-center p-2 text-xl sm:text-2xl">Clients</h1>
+        <ClientTable />
       </div>
     </div>
   );
 };
-export default Invoices;
+export default Clients;

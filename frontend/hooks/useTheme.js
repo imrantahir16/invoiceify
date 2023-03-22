@@ -10,11 +10,12 @@ export const THEMES = [
   "lemonade",
   "night",
 ];
-
+let localTheme;
 const useTheme = () => {
-  const [theme, setTheme] = useState(
-    localStorage.getItem("theme") || "default"
-  );
+  if (typeof window !== "undefined") {
+    localTheme = localStorage.getItem("theme");
+  }
+  const [theme, setTheme] = useState(localTheme || "default");
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);

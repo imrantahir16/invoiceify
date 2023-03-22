@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { FaHeart } from "react-icons/fa";
 const Footer = () => {
@@ -11,7 +12,7 @@ const Footer = () => {
         <span>By Imran</span>
       </p>
       <div className="flex gap-4 ">
-        <a
+        <Link
           aria-label="linkedin link"
           className="cursor-pointer text-primary no-underline text-lg focus:outline-none focus:ring-1 focus:ring-primary focus:ring-offset-2 focus:ring-offset-transparent "
           href="https://www.linkedin.com/in/imran-tahir-4a1062132/"
@@ -19,8 +20,8 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <BsLinkedin className="hover:fill-primary-focus" />
-        </a>
-        <a
+        </Link>
+        <Link
           aria-label="github link"
           className="cursor-pointer text-primary no-underline text-lg focus:outline-none focus:ring-1 focus:ring-primary focus:ring-offset-2 focus:ring-offset-transparent "
           href="https://github.com/imrantahir16"
@@ -28,7 +29,7 @@ const Footer = () => {
           rel="noopener noreferrer"
         >
           <BsGithub className="hover:fill-primary-focus" />
-        </a>
+        </Link>
       </div>
     </div>
   );
