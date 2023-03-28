@@ -1,4 +1,4 @@
-const Logo = ({ navbar }) => {
+const Logo = ({ small }) => {
   const user = true;
   return (
     <svg
@@ -6,7 +6,7 @@ const Logo = ({ navbar }) => {
       id="icon-0"
       viewBox="0 0 910.88 180"
       className={`${user ? "fill-base-content" : "fill-primary"}  w-auto ${
-        navbar ? "h-[25px]" : "h-[20px] md:h-[35px]"
+        small ? "h-[25px]" : "h-[20px] md:h-[35px]"
       }`}
     >
       <g id="tight-bounds">

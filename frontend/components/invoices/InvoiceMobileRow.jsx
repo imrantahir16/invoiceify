@@ -64,7 +64,7 @@ const InvoiceMobileRow = ({ invoice }) => {
       {isOpen && (
         <div className="flex items-center justify-center gap-8">
           <label htmlFor={`edit-${invoice.id}`}>
-            <a href={`edit/invoice/${invoice.id}`}>
+            <a href={`invoices/${invoice.id}`}>
               <BiEditAlt className="cursor-pointer hover:fill-info h-6 w-6" />
             </a>
           </label>

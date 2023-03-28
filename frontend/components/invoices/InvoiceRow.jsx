@@ -2,6 +2,7 @@ import { BiEditAlt } from "react-icons/bi";
 import { BsTrash } from "react-icons/bs";
 import Modal from "../commonUI/Modal";
 import { useState } from "react";
+import Link from "next/link";
 
 const InvoiceRow = ({ data }) => {
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
@@ -38,9 +39,9 @@ const InvoiceRow = ({ data }) => {
       <td className="">
         <div className="flex items-center justify-evenly">
           <label htmlFor={`edit-${data.id}`}>
-            <a href={`edit/invoice/${data.id}`}>
+            <Link href={`/invoices/${data.id}`}>
               <BiEditAlt className="cursor-pointer hover:fill-info h-4 w-4 sm:h-6 sm:w-6" />
-            </a>
+            </Link>
           </label>
           <label htmlFor={`delete-${data.id}`} onClick={deleteToggleHandler}>
             <BsTrash className="cursor-pointer hover:fill-error h-4 w-4 sm:h-6 sm:w-6" />
